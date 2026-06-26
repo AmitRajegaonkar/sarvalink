@@ -2,10 +2,6 @@
 
 > A unified, RFID-powered campus management platform that brings attendance tracking, academic records, library management, fee management, events, video conferencing, and an AI assistant under one roof.
 
-<p align="center">
-  <em>Smart India Hackathon 2024 Project</em>
-</p>
-
 ---
 
 ## 📖 Overview
