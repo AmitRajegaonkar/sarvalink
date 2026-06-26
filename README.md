@@ -240,6 +240,3 @@ This is a **hackathon / prototype** codebase. Before any production use:
 
 ---
 
-<p align="center"><strong>SarvaLink</strong> — One card. One platform. Your entire campus, connected.</p>
-```
-
