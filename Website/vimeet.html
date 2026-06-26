@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Vimeet</title>
+    <link rel="stylesheet" href="vimeetstyle.css">
+</head>
+
+<body>
+    <script src="vimeetjs.js"></script>
+    <div class="navbar">
+        <a href="#home" class="logo">SarvaLink for VIMEET</a>
+        <a href="Login\login.html"><div class="icons">
+            <button>
+                Open Dashboard
+                <div class="arrow-wrapper">
+                    <img src="loginlogo.svg" alt="" class="arrow">
+            
+                </div>
+            </button>
+        </div></a>
+    </div>
+
+
+
+
+    <div class="dropdown-container">
+        <div>
+            <label for="department">Department:</label>
+            <select id="department" name="department" onchange="handleDepartmentChange()">
+                <option value="FE">FE</option>
+                <option value="AIML">AIML</option>
+                <option value="COMPS">COMPS</option>
+                <option value="EXTC">EXTC</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECHANICAL">MECHANICAL</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="year">Year:</label>
+            <select id="year" name="year">
+                <option value="SE">SE</option>
+                <option value="TE">TE</option>
+                <option value="BE">BE</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="division">Div:</label>
+            <select id="division" name="division">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+    </div>
+
+    <button onclick="loadContent()" class="drop">Search</button>
+
+    <iframe id="contentFrame" src="" class="frame" allowfullscreen></iframe>
+
+
+
+
+
+
+</body>
+
+</html>

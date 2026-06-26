@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login-Student</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login_form">
+    <!-- Login form container -->
+    <form action="#">
+      <h3>Login as</h3>
+
+      <div class="login_option">
+        <!-- Student option -->
+        <div class="option">
+          <input type="radio" id="student" name="login_type" value="student" hidden>
+          <label for="student">
+            <img src="logos/student.svg" alt="Student" class="svg"/>
+            <span>Student</span>
+          </label>
+        </div>
+
+        <!-- Admin option -->
+        <div class="option">
+          <input type="radio" id="admin" name="login_type" value="admin" hidden>
+          <label for="admin">
+            <img src="logos/admin.svg" alt="Admin" />
+            <span>Admin</span>
+          </label>
+        </div>
+      </div>
+
+        <br><hr><br><br>
+
+      <!-- UID input box -->
+      <div class="input_box">
+        <label for="uid">UID</label>
+        <input type="text" id="uid" placeholder="Enter UID" required />
+      </div>
+
+      <!-- Password input box -->
+      <div class="input_box">
+        <div class="password_title">
+          <label for="password">Password</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <input type="password" id="password" placeholder="Enter your password" required />
+      </div>
+
+      <!-- Login button -->
+      <button type="submit">Log In</button>
+
+      <!-- <p class="sign_up">Don't have an account? <a href="#">Sign up</a></p> -->
+    </form>
+    <a href="..\Student Panel\dashboard.html">Testing link for stu panel</a>
+  </div>
+</body>
+</html>

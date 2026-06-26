@@ -1,0 +1,10 @@
+{
+    "workbench.tips.enabled": false,
+    "editor.find.loop": true,
+    "diffEditor.renderMarginRevertIcon": true,
+    "editor.suggest.matchOnWordStartOnly": true,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+    "editor.stickyScroll.scrollWithEditor": false,
+    "workbench.tree.enableStickyScroll": true
+}

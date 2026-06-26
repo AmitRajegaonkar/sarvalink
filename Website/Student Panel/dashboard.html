@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <span>SarvaLink</span>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i> Quick Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="fee.html">
+                    <i class="fas fa-receipt"></i> Fees Records
+                </a>
+            </li>
+            <li>
+                <a href="library.html">
+                    <i class="fas fa-book"></i> Library Records
+                </a>
+            </li>
+            <li>
+                <a href="academic.html">
+                    <i class="fas fa-graduation-cap"></i> Academic Records
+                </a>
+            </li>
+            <li>
+                <a href="testport.html">
+                    <i class="fas fa-file-alt"></i> Test Conducting Portal
+                </a>
+            </li>
+            <li>
+                <a href="eventupdate.html">
+                    <i class="fas fa-calendar-alt"></i> Events Updates
+                </a>
+            </li>
+            <li>
+                <a href="othnoti.html">
+                    <i class="fas fa-message"></i> Chat with AI
+                </a>
+            </li>
+            <li>
+                <a href="stuprofile.html">
+                    <i class="fas fa-user"></i> Student Profile
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../idcard.svg" alt="Avatar" style="width:250x;height:400px;" />
+                    <p class="fcay">2023-24</p>
+                    <img src="assets\DP.jpg" alt="Your image here" class="fcimg">
+                    <p class="fcname">Vikram Mahabala Devadiga</p>
+                    <p class="fcuid">GCSE1012023000</p>
+                    <p class="fcbranch">CSE (AI &ML)</p>
+                    <p class="fcdob">16/03/2003</p>
+                    <p class="fccon">79777 89000</p>
+                    <p class="fcadd"> 2, 9/10, Kanchanganga Towers, 4 Bunglows, Manish Nagar, Andheri (west) Mumbai 
+                        Maharashtra 02226371093</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="assets\sl logo.png" alt="" class="fclogo">
+                </div>
+            </div>
+        </div>
+        <button onclick="updateFields()">Update Info (test)</button>
+
+        <div class="dashboard-wrapper">
+            <h2>Quick Tabs</h2>
+            <div class="dashboard-container">
+                <a href="#" class="dashboard-box">
+                    <h3>Attendance</h3>
+                    <p><span class="percentage">85%</span> Present</p>
+                </a>
+                <a href="fee.html" class="dashboard-box">
+                    <h3>Fee Remaining</h3>
+                    <p><span class="amount">₹10,000</span></p>
+                </a>
+                <a href="#" class="dashboard-box">
+                    <h3>Result</h3>
+                    <p>Cleared: <span class="result">5/6</span></p>
+                </a>
+                <a href="library.html" class="dashboard-box">
+                    <h3>Library Due Date</h3>
+                    <p><span class="due-date">20th Sept 2024</span></p>
+                </a>
+            </div>
+        </div>
+        <div class="frame">
+            <h2>Attendance:</h2>
+            <iframe src="..\Attendance\A1.html" id="frame"></iframe>
+        </div>
+
+    </div>
+    <script>
+        // Dropdown toggle functionality
+        const dropdownToggle = document.getElementById('dropdownToggle');
+        const dropdownToggleIcon = document.getElementById('dropdownToggleIcon');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        dropdownToggle.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+        });
+
+        dropdownToggleIcon.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!dropdownToggle.contains(e.target) && !dropdownToggleIcon.contains(e.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+
+</html>
